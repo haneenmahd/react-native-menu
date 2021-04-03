@@ -1,33 +1,37 @@
 import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import { BlurView } from "expo-blur";
+import { SafeAreaView, StyleSheet, Text } from 'react-native';
 
-import { LinearGradient } from 'expo-linear-gradient';
-
-// You can import from local files
 import Menu from './components/Menu';
 
 export default function App() {
   return (
-    <View style={{ flex: 1 }}>
-      <BlurView intensity={100} style={styles.container}>
-      <LinearGradient
-        colors={['#FF3CAC', '#784BA0', '#2B86C5']}
-        style={{
-          flex: 1
-        }}>
-        <Menu color="#fafafa" items={['Name & Appearance', 'Share List', 'Select Reminders', 'Show Completed', 'Delete List']} />
-      </LinearGradient>
-    </BlurView>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Menu
+        color="#444"
+        items={[
+          'Name & Appearance',
+          'Share List',
+          'Select Reminders',
+          'Show Completed',
+          'Delete List',
+          'Stop Local Server'
+        ]}
+        boxShadowColor="rgba(0, 0, 0, 0.8)"
+        backgroundColor="#fff"
+        seperatorColor="#22222210">
+      </Menu>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    paddingTop: 100,
-    backgroundColor: '#ecf0f1',
+    maxHeight: "100%",
+    width: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#eee"
   },
 });

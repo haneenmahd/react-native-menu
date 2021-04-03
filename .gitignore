@@ -1,5 +1,6 @@
 node_modules/**/*
 .expo/*
+.expo/
 npm-debug.*
 *.jks
 *.p8
@@ -116,3 +117,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+Computer configuration files
+*.ini

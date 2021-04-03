@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "menu",
-    "slug": "snack-7ffe4577-a21b-4460-89ec-8901e683fbd2",
+    "name": "react-native-menu",
+    "slug": "react-native-menu",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,8 +23,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      },
-      "package": "com.haneenmahdin.snack7ffe4577a21b446089ec8901e683fbd2"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
